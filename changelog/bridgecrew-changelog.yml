@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bridgecrewio/checkov/releases
+notes: >-
+  The Bridgecrew platform changelog (docs.bridgecrew.io/changelog) was retired
+  after the Palo Alto Networks acquisition. The durable, actively-maintained
+  first-party release stream is the Checkov open-source project, which publishes
+  dated GitHub releases on a near-continuous cadence (multiple per week).
+scheme: semver
+current_version: 3.3.8
+cadence: continuous
+entries:
+- version: 3.3.8
+  date: '2026-07-09'
+  breaking: false
+- version: 3.3.7
+  date: '2026-07-07'
+  breaking: false
+- version: 3.3.6
+  date: '2026-06-30'
+  breaking: false
+- version: 3.3.5
+  date: '2026-06-29'
+  breaking: false
+- version: 3.3.2
+  date: '2026-06-23'
+  breaking: false
+- version: 3.3.1
+  date: '2026-06-11'
+  breaking: false

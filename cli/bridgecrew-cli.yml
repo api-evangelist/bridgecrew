@@ -1,0 +1,68 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.checkov.io/2.Basics/Installing%20Checkov.html
+name: checkov
+summary: >-
+  Checkov is Bridgecrew's open-source command-line scanner for infrastructure as
+  code. It statically analyzes IaC and related artifacts against 1000+ built-in
+  policies plus custom policies, and can authenticate to the Bridgecrew/Prisma
+  platform with an API key for centralized results and suppressions.
+binary: checkov
+docs: https://www.checkov.io/
+source: https://github.com/bridgecrewio/checkov
+install:
+- method: pip
+  command: pip install checkov
+- method: homebrew
+  command: brew install checkov
+- method: docker
+  command: docker run --tty --volume /path/to/iac:/tf bridgecrew/checkov --directory /tf
+- method: pipenv
+  command: pipenv install checkov
+frameworks_scanned:
+- terraform
+- terraform_plan
+- cloudformation
+- kubernetes
+- helm
+- kustomize
+- serverless
+- arm
+- dockerfile
+- github_actions
+- gitlab_ci
+- bitbucket_pipelines
+- secrets
+- sca_package
+- sca_image
+key_flags:
+- flag: --directory / -d
+  description: Scan a directory of IaC files recursively.
+- flag: --file / -f
+  description: Scan a specific file.
+- flag: --framework
+  description: Restrict the scan to one or more frameworks.
+- flag: --check / -c
+  description: Run only the listed check IDs.
+- flag: --skip-check
+  description: Skip the listed check IDs.
+- flag: --output / -o
+  description: Output format (cli, json, junitxml, github_failed_only, sarif, csv, ...).
+- flag: --compact
+  description: Do not display code blocks in the output.
+- flag: --soft-fail
+  description: Return exit code 0 even when checks fail.
+- flag: --external-checks-dir
+  description: Directory of custom Python or YAML policies.
+- flag: --bc-api-key
+  description: >-
+    Bridgecrew/Prisma platform API key used to send results to the platform and
+    pull down custom/suppressed policies.
+platform_auth:
+  method: api-key
+  flag: --bc-api-key
+  format: '<uuid>::<uuid>'
+  notes: >-
+    Platform API keys were issued from the Bridgecrew console (Integrations > API
+    Token); post-acquisition the equivalent key is managed in Prisma Cloud
+    Application Security.
