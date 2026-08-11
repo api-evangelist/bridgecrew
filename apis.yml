@@ -50,6 +50,19 @@ tags:
 - Open Source
 apis: []
 common:
+- type: IssueTracker
+  url: https://github.com/bridgecrewio/checkov/issues
+- type: Releases
+  url: https://github.com/bridgecrewio/checkov/releases
+- type: SecurityPolicy
+  url: https://github.com/bridgecrewio/checkov/blob/main/SECURITY.md
+- type: CodeOfConduct
+  url: https://github.com/bridgecrewio/checkov/blob/main/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/bridgecrewio/checkov/blob/main/CONTRIBUTING.md
+- type: License
+  name: Apache-2.0
+  url: https://github.com/bridgecrewio/checkov/blob/main/LICENSE
 - type: DomainSecurity
   url: security/bridgecrew-domain-security.yml
 - type: Website
