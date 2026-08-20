@@ -47,6 +47,16 @@ tags:
 - Static Analysis
 - Terraform
 - Checkov
+- Open-Source
+tags_raw:
+- Company
+- Security
+- Cloud Security
+- Infrastructure as Code
+- DevSecOps
+- Static Analysis
+- Terraform
+- Checkov
 - Open Source
 apis: []
 common:
