@@ -60,7 +60,7 @@ tags:
 - Static Analysis
 - Terraform
 - Checkov
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Security
@@ -71,6 +71,7 @@ tags_raw:
 - Terraform
 - Checkov
 - Open Source
+- Open-Source
 apis: []
 common:
 - type: IssueTracker
